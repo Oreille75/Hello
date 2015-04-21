@@ -1,0 +1,383 @@
+html {
+	height: 100%;
+}
+
+body {
+	height: 100%;
+	min-height: 100%;
+	overflow: hidden;
+	-webkit-user-select: none;
+}
+	body.home {
+		background: url('../img/home_bg.png') no-repeat; 
+		-webkit-background-size: cover;
+	}
+	body.feed {
+		background: url('../img/feed_bg.png') no-repeat; 
+		-webkit-background-size: cover;
+	}
+	body.zoom {
+		background: white;
+	}
+
+	body.home #home {
+		display: block;
+	}
+	body.home #feed {
+		display: none;
+	}
+	body.home #zoom {
+		display: none;
+	}
+
+	body.feed #home {
+		display: none;
+	}
+	body.feed #feed {
+		display: block;
+	}
+	body.feed #zoom {
+		display: none;
+	}
+
+	body.zoom #home {
+		display: none;
+	}
+	body.zoom #feed {
+		display: none;
+	}
+	body.zoom #zoom {
+		display: block;
+	}
+
+.hide {
+	opacity: 0;
+	-webkit-transition: 0.2s ease-in-out;
+}
+
+.show {
+	opacity: 1;
+	-webkit-transition: 0.2s ease-in-out;
+}
+
+.hidenow {
+	opacity: 0;
+}
+
+.shownow {
+	opacity: 1;
+}
+
+
+body #zoom {
+	-webkit-animation: 'scrolling_background' 500s linear infinite reverse;
+	width: 1280px;
+	height: 960px;
+	margin: 0 auto;
+}
+	body.zoomtwitter #zoom {
+		background: url('../img/bg_bleu.png') repeat-x;
+		background-size: cover; 
+	}
+
+	body.zoominstagram #zoom {
+		background: url('../img/bg_orange.png') repeat-x; 
+		background-size: cover;
+	}
+
+	#zoom.zoom #zoomzoom {
+		display: block;
+	}
+	#zoom.zoom #zoomwinner {
+		display: none;
+	}
+
+	#zoom.winner #zoomzoom {
+		display: none;
+	}
+	#zoom.winner #zoomwinner {
+		display: block;
+	}
+
+	#servicelogo {
+		width: 80px;
+		height: 80px;
+		position: absolute;
+		margin-left: 1158px;
+		top: 25px;
+	}
+		body.zoomtwitter #servicelogo {
+			background: url('../img/twitter_logo_big.png');
+		}
+		body.zoominstagram #servicelogo {
+			background: url('../img/instagram_logo_big.png');
+		}
+
+	#zoomricardlogo {
+		width: 628px;
+		height: 73px;
+		background: url('../img/ricard_logo_small.png');
+		position: absolute;
+		z-index: 3;
+		margin-left: 327px;
+		top: 25px;
+	}
+
+	#zoomricardhash {
+		width: 399px;
+		height: 40px;
+		background: url('../img/ricard_hash_white.png');
+		position: absolute;
+		z-index: 3;
+		margin-left: 441px;
+		top: 647px;
+	}
+	
+	#zoomvip {
+		width: 326px;
+		height: 577px;
+		margin-left: 727px;
+		position: absolute;
+		-webkit-transform: rotate(-5deg);
+		margin-top: -8px;
+	}
+		body.zoomtwitter #zoomvip {
+			background: url('../img/vip_blue.gif') no-repeat;
+			background-size: cover;
+		}
+		body.zoominstagram #zoomvip {
+			background: url('../img/vip_orange.gif') no-repeat;
+			background-size: cover;
+		}	
+		#zoomavatarvip {
+			width: 133px;
+			height: 133px;
+			border-radius: 133px;
+			margin-left: 121px;
+			margin-top: 218px;
+			position: absolute;
+		}
+
+	#zoomwinnertext {
+		position: absolute;
+		margin-top: 217px;
+		margin-left: 180px;
+	}
+		#zoomwinnertext h1, h2, h3 {
+			cursor: default;
+		}
+		#zoomwinnertext h1, h2, #zoomwinnerusername {
+			font-size: 72px;
+			font-family: "Futura";
+			font-weight: bold;
+			text-transform: uppercase;
+			color: #FFF;
+		}
+		#zoomwinnerusername {
+			font-size: 64px;
+			display: inline;
+		}
+		#zoomwinnertext h2 {
+			font-size: 64px;
+		}
+		#zoomwinnertext h3 {
+			font-size: 60px;
+			font-family: "Futura Heavy";
+			text-transform: uppercase;
+			color: #FFF;
+			margin-top: 10px;
+		}
+		#zoomwinnertext h2 {
+			margin-top: 10px;
+		}
+
+	#pola {
+		display: none;
+		width: 572px;
+		height: 658px;
+		background: url('../img/pola.png');
+		float: left;
+		margin-left: -14px;
+		margin-top: -14px;
+	}
+		#polaimg {
+			width: 415px;
+			height: 415px;
+			margin-top: 120px;
+			margin-left: 115px;
+			-webkit-transform: rotate(-2.2deg);
+		}
+		body.zoompic #pola{
+			display: block;
+		}
+		body.zoompic #zoominfo {
+			width: 600px;
+		}
+		body.zoompic #zoomtext {
+			font-size: 30px;
+			line-height: 48px;
+		}
+	#zoominfo {
+		width: 1026px;
+		margin-left: 90px;
+		margin-top: 185px;
+		float: left;
+	}
+		#zoomavatar {
+			border: 7px solid #FFF;
+			display: inline-block;
+		}
+		#zoomavatar, #zoomavatarimg {
+			width: 130px;
+			height: 130px;
+			border-radius: 130px;
+		}
+		#zoomusername {
+			font-family: "Futura";
+			font-size: 46px;
+			font-weight: bold;
+			text-transform: uppercase;
+			color: #FFF;
+			display: inline-block;
+			margin-left: 20px;
+			margin-top: 14px;
+			cursor: default;
+		}
+		#zoomtext {
+			font-family: "Futura Heavy";
+			font-size: 45px;
+			line-height: 70px;
+			margin-top: 20px;
+			color: #FFF;
+			text-transform: uppercase;
+			cursor: default;
+			height: 295px;
+			overflow: hidden;
+			word-break: break-word;
+		}
+
+header {
+	width: 100%;
+	height: 120px;
+	background: url('../img/feed_header.png') repeat-x;
+	z-index: 2;
+	position: relative;
+}
+
+	header #logos {
+		width: 1113px;
+		height: 120px;
+		margin: 0 auto;
+	}
+
+		#logos #ricard_small {
+			width: 628px;
+			height: 73px;
+			background: url('../img/ricard_logo_small.png');
+			margin-top: 13px;
+			float: left;
+		}
+
+		#logos #ricard_hash {
+			width: 399px;
+			height: 40px;
+			background: url('../img/ricard_hash.png');
+			margin-top: 32px;
+			float: right;
+		}
+
+#feed_container {
+	width: 1280px;
+	height: 720px;
+	position: relative;
+	top: -120px;
+	margin: 0 auto;
+	z-index: 1;
+}
+
+	#feed_mover {
+		margin-top: 120px;
+	}
+
+	.feed_column {
+		width: 640px;
+		float: left;
+	}
+
+#home {
+	background: url('../img/triangle_bg.png') repeat-x; 
+	-webkit-background-size: cover;
+	height: 100%;
+	min-height: 100%;
+	-webkit-animation: 'scrolling_background' 500s linear infinite reverse;
+	font-family: "Futura";
+	font-size: 39px;
+	font-weight: bold;
+	color: #FFFFFF;
+	text-shadow: 0px 1px 21px rgba(0, 0, 0, 0.75);
+	text-align: center;
+	cursor: default;
+}
+
+	#ricard_logo {
+		width: 760px;
+		height: 89px;
+		background: #000000;
+		margin: 80px auto;
+	}
+
+		#logo {
+			background: url('../img/ricard_logo.png') no-repeat;
+			-webkit-background-size: contain;
+			width: 760px;
+			height: 89px;
+			position: relative;
+			z-index: 3;
+		}
+
+		#ricard_mask {
+			background: url('../img/ricard_mask.png') repeat-x;
+			width: 760px;
+			height: 60px;
+			position: relative;
+			margin-top: -73px;
+			z-index: 2;
+			/*-webkit-animation: 'scrolling_background' 1000s linear infinite reverse;*/
+		}
+
+	#home .headline {
+		margin-top: 50px;
+	}
+
+		#home .headline .centering {
+			display: inline-block;
+			width: 135px;
+		}
+
+			.centering.insta img {
+				margin-left: 15px;
+			}
+
+		#home .headline img {
+			display: block;
+			position: absolute;
+			margin-top: -80px;
+		}
+
+	#home h1 {
+		font-weight: 800;
+		font-size: 140px;
+		margin-top: 60px;
+		margin-bottom: 20px;
+	}
+
+	#home h2 {
+		font-size: 55px;
+	}
+
+
+@-webkit-keyframes scrolling_background {
+	0%   {background-position-x: 0px;}
+	50%  {background-position-x: -10000px;}
+	100% {background-position-x: 0px;}
+}

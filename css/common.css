@@ -1,0 +1,112 @@
+@font-face {
+	font-family: 'Futura';
+	src: url('../fonts/FuturaStd-Bold.otf') format('opentype');
+}
+
+@font-face {
+	font-family: 'Futura Heavy';
+	src: url('../fonts/FuturaStd-Heavy.otf') format('opentype');
+}
+
+.clear {
+	clear: both;
+}
+
+.item {
+	width: 616px;
+	min-height: 84px;
+	margin: 10px auto 10px;
+}
+
+	.item.pic .itempicture {
+		width: 350px;
+		height: 350px;
+		overflow: hidden;
+		float: left;
+	}
+		.item.pic .itempicture img {
+			width: 350px;
+			height: 350px;
+			border: none;
+			outline: none;
+		}
+	.item.pic .itemcontent {
+		float: left;
+		width: 266px;
+	}
+	.item.pic p {
+		font-size: 20px;
+		width: 222px;
+		margin-left: 30px;
+		word-break: break-word;
+	}
+	.item.pic .user {
+		margin-bottom: 0;
+		margin-right: 46px;
+	}
+	.item.fav {
+		border-color: #e1cc1d;
+	}
+	.item.rocket {
+		border-color: #15b533;
+	}
+	.item.winner {
+		border-color: #cb0b0b;
+	}
+
+	.tweet {
+		border: 7px solid #086fb8;
+		background: url('../img/corner_twitter.png') no-repeat top right white;
+	}
+
+	.inst {
+		border: 7px solid #f26522;
+		background: url('../img/corner_instagram.png') no-repeat top right white;
+	}
+
+		.item p {
+			display: block;
+			color: #353535;
+			font-family: "Futura Heavy";
+			font-size: 24px;
+			line-height: 30px;
+			text-transform: uppercase;
+			cursor: default;
+			width: 400px;
+			margin: 14px;
+			float: left;
+		}
+
+		.item .user {
+			width: 174px;
+			margin-top: 14px;
+			margin-bottom: 14px;
+			margin-right: 14px;
+			float: right;
+		}
+
+			.item .avatar {
+				margin: 0 auto;
+			}
+				.item .avatar, .item .avatar img {
+					width: 98px;
+					height: 98px;
+					border-radius: 98px;
+				}
+
+			.item .username {
+				font-family: "Futura";
+				font-weight: bold;
+				margin: 14px auto 0px;
+				color: #086fb8;
+				text-transform: uppercase;
+				text-align: center;
+				font-size: 18px;
+				cursor: default;
+				height: 18px;
+				overflow: hidden;
+				word-break: break-all
+			}
+				.item.inst .username {
+					color: #f26522;
+				}
